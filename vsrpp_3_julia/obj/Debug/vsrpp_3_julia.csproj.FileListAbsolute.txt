@@ -1,2 +1,10 @@
 E:\study\1_Study\BarsuEngineeringFaculty\mvs_3c_2s\tp_8\vsrpp_3_julia\vsrpp_3_julia\bin\Debug\vsrpp_3_julia.exe.config
 E:\study\1_Study\BarsuEngineeringFaculty\mvs_3c_2s\vsrpp_3_julia\vsrpp_3_julia\bin\Debug\vsrpp_3_julia.exe.config
+E:\study\1_Study\BarsuEngineeringFaculty\mvs_3c_2s\vsrpp_3_julia\vsrpp_3_julia\obj\Debug\vsrpp_3_julia.csprojResolveAssemblyReference.cache
+E:\study\1_Study\BarsuEngineeringFaculty\mvs_3c_2s\vsrpp_3_julia\vsrpp_3_julia\obj\Debug\vsrpp_3_julia.Form1.resources
+E:\study\1_Study\BarsuEngineeringFaculty\mvs_3c_2s\vsrpp_3_julia\vsrpp_3_julia\obj\Debug\vsrpp_3_julia.Properties.Resources.resources
+E:\study\1_Study\BarsuEngineeringFaculty\mvs_3c_2s\vsrpp_3_julia\vsrpp_3_julia\obj\Debug\vsrpp_3_julia.csproj.GenerateResource.Cache
+E:\study\1_Study\BarsuEngineeringFaculty\mvs_3c_2s\vsrpp_3_julia\vsrpp_3_julia\bin\Debug\vsrpp_3_julia.exe
+E:\study\1_Study\BarsuEngineeringFaculty\mvs_3c_2s\vsrpp_3_julia\vsrpp_3_julia\bin\Debug\vsrpp_3_julia.pdb
+E:\study\1_Study\BarsuEngineeringFaculty\mvs_3c_2s\vsrpp_3_julia\vsrpp_3_julia\obj\Debug\vsrpp_3_julia.exe
+E:\study\1_Study\BarsuEngineeringFaculty\mvs_3c_2s\vsrpp_3_julia\vsrpp_3_julia\obj\Debug\vsrpp_3_julia.pdb

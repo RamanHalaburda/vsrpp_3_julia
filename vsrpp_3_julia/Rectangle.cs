@@ -11,13 +11,14 @@ namespace vsrpp_3_julia
 
         public void per() 
         { 
-            perimeter = a * b; 
-            Type = "Площадь:"; 
+            perimeter = (a + b) * 2; 
+            Type = "Периметр:"; 
             Triangle_Type = "Прямоугольник"; 
         }
+
         public void square() 
         { 
-            s = "Площадь:" + Convert.ToString(a * b); 
+            s = "Площадь: " + Convert.ToString(a * b); 
         }
         public Rectangle(int a1, int b1, int x1, int y1)
         {

@@ -42,11 +42,13 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 195);
+            this.button3.Location = new System.Drawing.Point(12, 169);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(151, 21);
             this.button3.TabIndex = 22;
@@ -56,7 +58,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 168);
+            this.button2.Location = new System.Drawing.Point(12, 142);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(151, 21);
             this.button2.TabIndex = 23;
@@ -151,7 +153,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 222);
+            this.button1.Location = new System.Drawing.Point(12, 196);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 23);
             this.button1.TabIndex = 9;
@@ -164,15 +166,37 @@
             this.textBox1.Location = new System.Drawing.Point(169, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(446, 233);
+            this.textBox1.Size = new System.Drawing.Size(514, 262);
             this.textBox1.TabIndex = 24;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(12, 222);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(151, 23);
+            this.button4.TabIndex = 25;
+            this.button4.Text = "Вывод в файл";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(12, 251);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(151, 23);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "Чтение из файла";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 252);
+            this.ClientSize = new System.Drawing.Size(695, 279);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -210,6 +234,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 

@@ -27,6 +27,12 @@ namespace vsrpp_3_julia
             }
         }
 
+        public void square()
+        {
+            int p = a + b + c;
+            s = "Площадь: " + (int)Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+        }
+
         public Triangle(int a1, int b1, int c1, int x1, int y1, string tip1)
         {
             if ((a + b < c) || (a + c > b) || (b + c < a)) 
@@ -43,6 +49,7 @@ namespace vsrpp_3_julia
             y = y1;
             tip = tip1;
             per();
+            square();
         }
     }
 }

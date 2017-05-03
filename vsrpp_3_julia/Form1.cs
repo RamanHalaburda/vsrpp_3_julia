@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace vsrpp_3_julia
 {
@@ -26,28 +27,31 @@ namespace vsrpp_3_julia
             textBox1.Text = "";
 
             // вывод исходного массива
+            textBox1.Text += ("Исходный список:") + Environment.NewLine;
             for (int i = 0; i < f.Count; i++)
             {
                 textBox1.Text += (
                     Convert.ToString(f[i].Type) + "\t" 
-                    + System.Convert.ToString(f[i].perimeter) + "\t x+y = " 
-                    + System.Convert.ToString(f[i].x + f[i].y) + "\t" 
+                    + System.Convert.ToString(f[i].perimeter) + "\t x+y = "                    
+                    + System.Convert.ToString(f[i].x + f[i].y) + "\t\t"
+                    + f[i].s + "\t\t"
                     + f[i].Triangle_Type);
                 textBox1.Text += Environment.NewLine;
             }
             f.Sort(Figure.MyClassCompareDate);
 
             // вывод разделителя
-            textBox1.Text += ("__________________________________________________________");
-            textBox1.Text += Environment.NewLine;
+            textBox1.Text += ("=====================================================") + Environment.NewLine;
 
             // вывод отсортированного массива
+            textBox1.Text += ("Сортированный список:") + Environment.NewLine;
             for (int i = 0; i < f.Count; i++)
             {
                 textBox1.Text += (
                     Convert.ToString(f[i].Type) + "\t" 
-                    + System.Convert.ToString(f[i].perimeter) + "\t x+y = " 
-                    + System.Convert.ToString(f[i].x + f[i].y) + "\t" 
+                    + System.Convert.ToString(f[i].perimeter) + "\t x+y = "
+                    + System.Convert.ToString(f[i].x + f[i].y) + "\t\t"
+                    + f[i].s + "\t\t"
                     + f[i].Triangle_Type);
                 textBox1.Text += Environment.NewLine;
             }
@@ -97,6 +101,26 @@ namespace vsrpp_3_julia
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
+        }
+
+        // вывод в файл
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FileStream file = new FileStream("figures.txt", FileMode.Append, FileAccess.Write);
+            StreamWriter sw = new StreamWriter(file);
+            sw.WriteLine(textBox1.Text);
+            sw.Close();
+            file.Close();
+        }        
+
+        // чтение их файла
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FileStream file = new FileStream("figures.txt", FileMode.Open, FileAccess.Read);
+            StreamReader sr = new StreamReader(file);
+            textBox1.Text = sr.ReadToEnd();
+            sr.Close();
+            file.Close();
         }
     }
 }
